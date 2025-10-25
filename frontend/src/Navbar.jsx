@@ -68,10 +68,10 @@ const Navbar = () => {
                         />
                         <div>
                             <h1 className="text-xl font-semibold text-[#003366]">
-                                Municipality of Nepal
+                                रामधुनी नगरपालिका वडा नम्बर १, झुम्का
                             </h1>
                             <p className="text-sm text-gray-700">
-                                सेवा, सुरक्षा, विकास (Service, Security, Development)
+                                कोशी प्रदेश, सुनसरी, नेपाल
                             </p>
                         </div>
                     </div>
@@ -95,11 +95,8 @@ const Navbar = () => {
                             }`}
                     >
                         <li>
-                            <a
-                                href="#"
-                                className="block px-5 py-3 hover:bg-white/20 transition"
-                            >
-                                <FaHome className="inline mr-2" /> Home
+                            <a href="#" className="block px-5 py-3 hover:bg-white/20 transition">
+                                <FaHome className="inline mr-2" /> गृहपृष्ठ
                             </a>
                         </li>
 
@@ -108,24 +105,24 @@ const Navbar = () => {
                                 href="#"
                                 className="block px-5 py-3 hover:bg-white/20 transition flex items-center"
                             >
-                                <FaInfoCircle className="mr-2" /> About Us
+                                <FaInfoCircle className="mr-2" /> परिचय
                                 <FaChevronDown className="ml-2" />
                             </a>
                             <div className="absolute left-0 hidden group-hover:block bg-white text-black shadow-md min-w-[220px] z-50">
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Introduction
+                                    परिचय
                                 </a>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Mayor & Officials
+                                    मेयर र अधिकारीहरू
                                 </a>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Organizational Structure
+                                    संगठन संरचना
                                 </a>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Vision & Mission
+                                    दृष्टि र मिशन
                                 </a>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    History
+                                    इतिहास
                                 </a>
                             </div>
                         </li>
@@ -135,64 +132,53 @@ const Navbar = () => {
                                 href="#"
                                 className="block px-5 py-3 hover:bg-white/20 transition flex items-center"
                             >
-                                <FaConciergeBell className="mr-2" /> Services
+                                <FaConciergeBell className="mr-2" /> सेवाहरू
                                 <FaChevronDown className="ml-2" />
                             </a>
                             <div className="absolute left-0 hidden group-hover:block bg-white text-black shadow-md min-w-[220px] z-50">
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Citizenship Certificate
+                                    नागरिकता प्रमाणपत्र
                                 </a>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Birth Registration
+                                    जन्म दर्ता
                                 </a>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Property Registration
+                                    सम्पत्ति दर्ता
                                 </a>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Business License
+                                    व्यवसाय इजाजतपत्र
                                 </a>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Tax Payment
+                                    कर तिर्नुहोस्
                                 </a>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                    Water Connection
+                                    पानी जडान
                                 </a>
                             </div>
                         </li>
 
                         <li>
-                            <a
-                                href="#"
-                                className="block px-5 py-3 hover:bg-white/20 transition"
-                            >
-                                <FaNewspaper className="inline mr-2" /> News & Events
+                            <a href="#" className="block px-5 py-3 hover:bg-white/20 transition">
+                                <FaNewspaper className="inline mr-2" /> समाचार र कार्यक्रमहरू
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="#"
-                                className="block px-5 py-3 hover:bg-white/20 transition"
-                            >
-                                <FaDownload className="inline mr-2" /> Downloads
+                            <a href="#" className="block px-5 py-3 hover:bg-white/20 transition">
+                                <FaDownload className="inline mr-2" /> डाउनलोड
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="#"
-                                className="block px-5 py-3 hover:bg-white/20 transition"
-                            >
-                                <FaProjectDiagram className="inline mr-2" /> Projects
+                            <a href="#" className="block px-5 py-3 hover:bg-white/20 transition">
+                                <FaProjectDiagram className="inline mr-2" /> परियोजनाहरू
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="#"
-                                className="block px-5 py-3 hover:bg-white/20 transition"
-                            >
-                                <FaPhoneAlt className="inline mr-2" /> Contact
+                            <a href="#" className="block px-5 py-3 hover:bg-white/20 transition">
+                                <FaPhoneAlt className="inline mr-2" /> सम्पर्क
                             </a>
                         </li>
                     </ul>
+
 
                     {/* Search Box */}
                     <div className="hidden md:flex items-center">
