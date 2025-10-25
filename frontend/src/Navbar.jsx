@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     FaPhone,
     FaEnvelope,
@@ -23,6 +23,15 @@ import {
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [langNepali, setLangNepali] = useState(true);
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % 3);
+        }, 4000);
+        return () => clearInterval(interval);
+    }, []);
+
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -201,6 +210,47 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+
+        
+            {/* imageSection */}
+            <div className="relative w-full h-[55vh] overflow-hidden">
+                {/* Slider Container */}
+                <div
+                    className={`flex transition-transform duration-1000 ease-in-out`}
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                >
+                    {/* Slide 1 */}
+                    <img
+                        src="/image.jpg"
+                        className="w-full h-[55vh] object-cover flex-shrink-0"
+                    />
+                    {/* Slide 2 */}
+                    <img
+                        src="/image1.jpg"
+                        alt="Slide 2"
+                        className="w-full h-[55vh] object-cover flex-shrink-0"
+                    />
+                    {/* Slide 3 */}
+                    <img
+                        src="/image2.jpg"
+                        alt="Slide 3"
+                        className="w-full h-[55vh] object-cover flex-shrink-0"
+                    />
+                </div>
+
+                {/* Navigation Dots */}
+                <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-3">
+                    {[0, 1, 2].map((index) => (
+                        <button
+                            key={index}
+                            onClick={() => setCurrentSlide(index)}
+                            className={`w-3 h-3 rounded-full ${currentSlide === index ? "bg-yellow-100" : "bg-white/70"
+                                }`}
+                        ></button>
+                    ))}
+                </div>
+            </div>
+
         </div>
     );
 };
