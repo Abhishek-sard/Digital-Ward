@@ -54,7 +54,7 @@ const Section = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
 
                     {/* Column 1 - Geographical Information */}
-                    <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#004080]">
+                    <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#5aa1a0]">
                         <div className="flex items-center mb-6">
                             <div className="w-10 h-10 bg-[#004080] rounded-full flex items-center justify-center mr-4">
                                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,7 +85,7 @@ const Section = () => {
                     </div>
 
                     {/* Column 2 - News and Information */}
-                    <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-green-600">
+                    <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#5aa1a0]">
                         <div className="flex items-center mb-6">
                             <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mr-4">
                                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +122,7 @@ const Section = () => {
                     </div>
 
                     {/* Column 3 - Representatives */}
-                    <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-red-600">
+                    <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#5aa1a0]">
                         <div className="flex items-center mb-6">
                             <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center mr-4">
                                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
