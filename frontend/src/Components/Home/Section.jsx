@@ -12,9 +12,21 @@ const Section = () => {
         {
             name: "तारा देवी थापा",
             position: "उप-अध्यक्ष",
-            image:  "/tara.jpg",
+            image: "/tara.jpg",
             tenure: "२०७९ - २०८४"
-        }
+        },
+        {
+            name: "सुरेश कुमार साह",
+            position: "सदस्य",
+            image: "/suresh.jpg",
+            tenure: "२०७९ - २०८४"
+        },
+        {
+            name: "लक्ष्मी कुमारी यादव",
+            position: "सदस्य",
+            image: "/laxmi.jpg",
+            tenure: "२०७९ - २०८४"
+        },
     ];
 
     const newsItems = [
@@ -71,6 +83,10 @@ const Section = () => {
                                 र सिंगिया गाविसलाई मिलाएर निर्माण गरिएको रामधुनी भासी नगरपालिकालाई हाल
                                 आएर गाउँ र नगरपालिकाहरु पुनरव्यवस्थित गर्ने क्रममा बक्लौरी गाविसका सबै र
                                 डुम्राहा गाविसका केही वडाहरुलाई मिलाएर रामधुनी नगरपालिका निर्माण गरिएको हो ।
+
+                                सार्वजनिक लेखा समिति
+
+                                नेपाल सरकारको स्थानीय सरकार संचालन ऐन २०७४ को दफा २२ बमोजिम स्थानीय तहहरुमा सार्वजनिक लेखा समिति गठन गर्नुपर्ने कानुनी बाध्यत्मक व्यवस्था रहको छ । यसै गरी यस पोखरा महानगरपालिकाको लेखा समिति कार्यविधि २०७६ बमोजिम समेत सार्वजनिक लेखा समिति गठन गर्नुपर्ने कानुनी व्यवस्था गरेको छ । 
                             </p>
                             <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                                 <h4 className="font-semibold text-[#004080] mb-2">सिमाना:</h4>
@@ -131,24 +147,94 @@ const Section = () => {
                             </div>
                             <h3 className="text-xl font-semibold text-red-800">जन प्रतिनिधि</h3>
                         </div>
-                        <div className="space-y-6">
+
+                        {/* Representatives Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {representatives.map((rep, index) => (
-                                <div key={index} className="text-center bg-red-50 rounded-lg p-4 border border-red-200 hover:shadow-md transition duration-200">
-                                    {/* Use actual image */}
-                                    <img
-                                        src={rep.image}
-                                        alt={rep.name}
-                                        className="w-20 h-20 rounded-full mx-auto mb-3 object-cover"
-                                    />
-                                    <h4 className="font-bold text-gray-800 text-lg">{rep.name}</h4>
-                                    <h6 className="text-red-600 font-medium mb-1">{rep.position}</h6>
-                                    <p className="text-sm text-gray-600 mb-2">कार्यकाल: {rep.tenure}</p>
-                                    <button className="text-red-600 hover:text-red-800 text-sm font-medium">
-                                        सम्पर्क गर्नुहोस्
-                                    </button>
+                                <div
+                                    key={index}
+                                    className="bg-gradient-to-br from-red-50 to-orange-50 rounded-lg p-4 border border-red-200 hover:shadow-md transition duration-200 flex flex-col h-full"
+                                >
+                                    <div className="flex items-center space-x-4">
+                                        {/* Image with fallback */}
+                                        <div className="flex-shrink-0">
+                                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-red-200 to-red-300 flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
+                                                <img
+                                                    src={rep.image}
+                                                    alt={rep.name}
+                                                    className="w-full h-full object-cover"
+                                                    onError={(e) => {
+                                                        e.target.style.display = 'none';
+                                                        e.target.nextSibling.style.display = 'flex';
+                                                    }}
+                                                />
+                                                <div className="w-full h-full bg-red-200 flex items-center justify-center text-red-600 font-bold text-lg hidden">
+                                                    {rep.name.split(' ').map(n => n[0]).join('')}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex-1 min-w-0">
+                                            <h4 className="font-bold text-gray-800 text-sm leading-tight mb-1">
+                                                {rep.name}
+                                            </h4>
+                                            <div className={`text-xs font-medium mb-1 px-2 py-1 rounded-full inline-block ${rep.position === 'वडा अध्यक्ष'
+                                                    ? 'bg-red-100 text-red-700 border border-red-200'
+                                                    : rep.position === 'उप-अध्यक्ष'
+                                                        ? 'bg-orange-100 text-orange-700 border border-orange-200'
+                                                        : 'bg-blue-100 text-blue-700 border border-blue-200'
+                                                }`}>
+                                                {rep.position}
+                                            </div>
+                                            <p className="text-xs text-gray-600">
+                                                कार्यकाल: {rep.tenure}
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="mt-3 pt-3 border-t border-red-100">
+                                        <button className="w-full bg-white hover:bg-red-50 text-red-600 border border-red-300 text-xs font-medium py-2 px-3 rounded-lg transition duration-200 flex items-center justify-center">
+                                            <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                            </svg>
+                                            सम्पर्क गर्नुहोस्
+                                        </button>
+                                    </div>
                                 </div>
                             ))}
                         </div>
+
+                        {/* Additional Info */}
+                        <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                            <h4 className="font-semibold text-yellow-800 text-sm mb-2 flex items-center">
+                                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                सम्पर्क जानकारी
+                            </h4>
+                            <p className="text-xs text-yellow-700">
+                                कार्यालय: ०२१-५४३२१० | ईमेल: ward1@ramdhunimun.gov.np
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Quick Stats Section */}
+                <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
+                    <h3 className="text-xl font-semibold text-[#004080] mb-6 text-center">वडा नम्बर-१ को संक्षिप्त परिचय</h3>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {[
+                            { label: 'कुल जनसंख्या', value: '१५,७८२', icon: '👥' },
+                            { label: 'घरधुरी', value: '३,२५६', icon: '🏠' },
+                            { label: 'वार्ड क्षेत्र', value: '५.८ वर्ग कि.मी.', icon: '🗺️' },
+                            { label: 'साक्षरता दर', value: '८५%', icon: '📚' }
+                        ].map((stat, index) => (
+                            <div key={index} className="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
+                                <div className="text-2xl mb-2">{stat.icon}</div>
+                                <div className="text-2xl font-bold text-[#004080]">{stat.value}</div>
+                                <div className="text-sm text-gray-600 mt-1">{stat.label}</div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
