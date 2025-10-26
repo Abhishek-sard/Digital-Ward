@@ -40,7 +40,7 @@ const Section = () => {
             <div className="container mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-[#004080] mb-4">
+                    <h1 className="text-4xl font-bold text-[#006080] mb-4">
                         रामधुनी नगरपालिका
                     </h1>
                     <h2 className="text-xl text-gray-700">वडा नम्बर-१</h2>
