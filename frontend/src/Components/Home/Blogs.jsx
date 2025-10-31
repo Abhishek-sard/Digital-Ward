@@ -19,9 +19,9 @@ const blogs = [
   },
   {
     date: "June 5, 2023",
-    title: "Building Accessible Web Applications",
+    title: "सूचना प्रविधिको अभियान, डिजिटल नेपाल को निर्माण",
     description:
-      "Discover best practices for creating web applications that are accessible to all users, including those with disabilities.",
+      "डिजिटल नेपाल अभियानले सरकारी सेवा, शिक्षा, स्वास्थ्य, कृषि, व्यापार, र संचार जस्ता क्षेत्रहरूलाई प्रविधिमैत्री बनाउन मद्दत पुर्‍याइरहेको छ। अब नागरिकले घरमै बसेर अनलाइनमार्फत विभिन्न सेवा प्राप्त गर्न सक्छन् ।",
     image:
       "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   },
