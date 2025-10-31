@@ -93,10 +93,6 @@ const Blogs = () => {
             </div>
           ))}
         </div>
-
-        <footer className="text-center mt-12 border-t border-gray-200 pt-6 text-gray-500 text-sm">
-          &copy; 2023 Blog Page. All rights reserved.
-        </footer>
       </div>
     </div>
   );
