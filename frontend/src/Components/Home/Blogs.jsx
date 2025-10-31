@@ -27,25 +27,25 @@ const blogs = [
   },
   {
     date: "May 28, 2023",
-    title: "The Power of JavaScript ES6+ Features",
+    title: "सार्वजनिक खरीद / बोलपत्र सूचना",
     description:
-      "Dive into the modern JavaScript features that have revolutionized how we write code, from arrow functions to async/await.",
+      "सार्वजनिक खरीद र बोलपत्र प्रक्रियामा नवीनतम विकास र प्रवृत्तिहरूको अन्वेषण गर्नुहोस्। प्रभावकारी र पारदर्शी खरीद प्रक्रियाको महत्त्व बुझ्नुहोस्।",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   },
   {
     date: "May 20, 2023",
-    title: "Optimizing Website Performance",
+    title: "विश्वसनीय संचालन प्रबंधन",
     description:
-      "Learn practical techniques to improve your website's loading speed and overall performance for better user experience and SEO.",
+      "संगठनहरूमा विश्वसनीय संचालन प्रबंधनको महत्त्व र यसले दीर्घकालीन सफलता सुनिश्चित गर्न कसरी मद्दत गर्दछ भन्ने बारे जान्नुहोस्।",
     image:
       "https://images.unsplash.com/photo-1555066931-bf19f8fd1085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   },
   {
     date: "May 12, 2023",
-    title: "Mobile-First Design Principles",
+    title: "विधुतीय शुसासन सेवा",
     description:
-      "Understand why mobile-first design is crucial in today's digital landscape and how to implement it effectively in your projects.",
+      "डिजिटल सेवाहरूको प्रभावकारी कार्यान्वयनका लागि विधुतीय शुसासन सेवाको महत्त्व र यसले कसरी नागरिकलाई लाभ पुर्याउँछ भन्ने बारे जान्नुहोस्।",
     image:
       "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   },
