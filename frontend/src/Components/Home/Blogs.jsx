@@ -1,4 +1,8 @@
 import React from "react";
+import Budget from '../../assets/budget.jpg';
+import Nea from '../../assets/nea.jpg';
+import Prabadi from '../../assets/prabadi.jpg';
+import Meeting from '../../assets/meeting.jpg';
 
 const blogs = [
   {
@@ -7,7 +11,7 @@ const blogs = [
     description:
       "यस ब्लग पोस्टमा, हामी बजेटको उद्देश्य र प्राथमिकताहरू निर्धारण गर्ने महत्त्वपूर्ण कदमहरू अन्वेषण गर्नेछौं। प्रभावकारी वित्तीय योजना बनाउनका लागि स्पष्ट लक्ष्यहरू सेट गर्न सिक्नुहोस्।",
     image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      Budget,
   },
   {
     date: "June 10, 2023",
@@ -15,7 +19,7 @@ const blogs = [
     description:
       "यस ब्लग पोस्टमा, हामी हालै सम्पन्न रामधुनी नगरपालिकाको बैठकको विस्तृत विवरण प्रदान गर्नेछौं। छलफल गरिएका मुख्य विषयहरू र निर्णयहरू पत्ता लगाउनुहोस्।",
     image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      Meeting,
   },
   {
     date: "June 5, 2023",
@@ -23,7 +27,7 @@ const blogs = [
     description:
       "डिजिटल नेपाल अभियानले सरकारी सेवा, शिक्षा, स्वास्थ्य, कृषि, व्यापार, र संचार जस्ता क्षेत्रहरूलाई प्रविधिमैत्री बनाउन मद्दत पुर्‍याइरहेको छ। अब नागरिकले घरमै बसेर अनलाइनमार्फत विभिन्न सेवा प्राप्त गर्न सक्छन् ।",
     image:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      Prabadi,
   },
   {
     date: "May 28, 2023",
@@ -47,7 +51,7 @@ const blogs = [
     description:
       "डिजिटल सेवाहरूको प्रभावकारी कार्यान्वयनका लागि विधुतीय शुसासन सेवाको महत्त्व र यसले कसरी नागरिकलाई लाभ पुर्याउँछ भन्ने बारे जान्नुहोस्।",
     image:
-      "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      Nea,
   },
 ];
 
