@@ -69,11 +69,11 @@ const Navbar = () => {
             </div>
 
             {/* Main Header */}
-            <header className="bg-white shadow-md py-4">
+            <header className="bg-white shadow-md py-1">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
                     <div className="flex items-center gap-3">
                         <img
-                            src="/nagarpalika.jpg"
+                            src="/nagarpalikalogo.jpg"
                         />
                         <div>
                             <h1 className="text-xl font-semibold text-[#003366]">
