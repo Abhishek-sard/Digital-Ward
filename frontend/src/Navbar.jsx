@@ -213,7 +213,7 @@ const Navbar = () => {
 
         
             {/* imageSection */}
-            <div className="relative w-full h-[55vh] overflow-hidden">
+            <div className="relative w-full h-[60vh] overflow-hidden">
                 {/* Slider Container */}
                 <div
                     className={`flex transition-transform duration-1000 ease-in-out`}
